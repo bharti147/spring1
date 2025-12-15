@@ -18,8 +18,10 @@ public class App
 //        Alien obj1 = context.getBean("alien1", Alien.class);
 
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        Desktop dt = context.getBean("desktop",Desktop.class);
+//        Desktop dt = context.getBean("desktop",Desktop.class);
 
+        Laptop l1 = context.getBean("laptop",Laptop.class);
+        Laptop l2 = context.getBean("laptop",Laptop.class);
 
         Alien a1 = context.getBean("alien",Alien.class);
         System.out.println(a1.getAge());
